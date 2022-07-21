@@ -1,11 +1,15 @@
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import App from "./App";
 
 describe("App tests", () => {
-  test("should render properly", async () => {
-    render(<App />);
+  test("should render properly", () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
 
-    const a = await screen.findByText("Minecraft Servers Manager");
-    expect(a).toBeInTheDocument();
+    expect(screen.getAllByText("Minecraft Servers Manager").length).toBe(2);
   });
 });
