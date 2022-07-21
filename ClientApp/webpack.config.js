@@ -59,6 +59,7 @@ module.exports = (env, argv) => {
 
   return {
     devServer: {
+      historyApiFallback: true,
       static: {
         directory: path.join(__dirname, "public"),
       },
