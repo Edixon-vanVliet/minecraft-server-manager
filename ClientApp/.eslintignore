@@ -1,0 +1,9 @@
+dist/
+coverage/
+
+aspnetcore-https.js
+aspnetcore-react.js
+
+src/service-worker.js
+src/serviceWorkerRegistration.js
+src/setupProxy.js
