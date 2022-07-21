@@ -1,0 +1,9 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    max-height: 100vh;
+
+    .layoutBody {
+        flex-grow: 1;
+    }
+}
