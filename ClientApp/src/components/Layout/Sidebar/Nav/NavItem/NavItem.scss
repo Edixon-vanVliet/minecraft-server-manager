@@ -1,0 +1,23 @@
+@import "styles/variables";
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 16px;
+
+    .navLink {
+        text-decoration: none;
+        color: $foreground-color;
+    }
+
+    &.active {
+        background-color: white;
+
+        .navLink,
+        .navIcon {
+            color: $background-color;
+        }
+    }
+}

@@ -1,15 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import App from "./App";
+import Nav from "./Nav";
 
-describe("App tests", () => {
+describe("Nav tests", () => {
   test("should render properly", () => {
     render(
       <MemoryRouter>
-        <App />
+        <Nav />
       </MemoryRouter>
     );
 
-    expect(screen.getAllByText("Minecraft Servers Manager").length).toBe(2);
+    expect(screen.getByText("Servers")).toBeInTheDocument();
   });
 });
